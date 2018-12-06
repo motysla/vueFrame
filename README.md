@@ -12,8 +12,6 @@
 6. app.vue引入了浏览器样式重置
 7. index.vue测试了css module，less和sass的全局导入
 
-持续更新
-
 ---
 
 - vue-universal-h5
@@ -27,9 +25,13 @@
 7. index.vue测试了css module，less和sass的全局导入
 8. 引入和native桥接的js，native框架为`WebViewJavascriptBridge`
 
-持续更新
-
 ---
+### 备注
 - native 和 api 按需引入，内部使用export方式；calc的export default为对象，也建议是使用到再引入（还能有代码提示）
 
+--
+## TODO
 
+1. eslint
+2. 骨架屏
+3. i18n
