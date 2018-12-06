@@ -1,7 +1,6 @@
 # vueFrame
 
 ## vue 项目的基础框架
----
 
 - vue-universal-pc
 
@@ -22,3 +21,4 @@
 1. 这是服务于移动端的构建，基于vue2.x，cli3
 
 2. 持续更新
+
