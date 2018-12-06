@@ -1,8 +1,8 @@
 # vueFrame
 
-### vue 项目的基础框架
+vue 项目的基础框架，分为pc电脑端和h5移动端
 
--- vue-universal-pc
+### vue-universal-pc
 
 1. 这是服务于pc端的构建，基于vue2.x，cli3
 2. package.json内置了router，vuex，axios，less，sass
@@ -12,7 +12,7 @@
 6. app.vue引入了浏览器样式重置
 7. index.vue测试了css module，less和sass的全局导入
 
--- vue-universal-h5
+### vue-universal-h5
 
 1. 这是服务于移动端的构建，基于vue2.x，cli3
 2. package.json内置了router，vuex，axios，less，sass
@@ -22,6 +22,8 @@
 6. app.vue引入了浏览器样式重置
 7. index.vue测试了css module，less和sass的全局导入
 8. 引入和native桥接的js，native框架为`WebViewJavascriptBridge`
+
+---
 
 ### 备注
 - native 和 api 按需引入，内部使用export方式；calc的export default为对象，也建议是使用到再引入（还能有代码提示）
