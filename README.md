@@ -9,10 +9,15 @@
 3. main.js全局引入了element-ui，swiper，路由钩子设置页面标题
 4. vue.config.js配置了css module，less和sass的全局导入，devServer代理
 5. router.js配置了页面重定向，二级路由
-6. qpp.vue引入了浏览器样式重置
+6. app.vue引入了浏览器样式重置
 7. index.vue测试了css module，less和sass的全局导入
 
-8. 持续更新
+持续更新
+1. eslint
+2. 骨架屏
+3. i18n
+
+
 
 ---
 
