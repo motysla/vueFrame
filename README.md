@@ -1,6 +1,9 @@
 # vueFrame
-vue 项目的基础框架
 
+## vue 项目的基础框架
+---
+
+- vue-universal-pc
 
 1. 这是服务于pc端的构建，基于vue2.x，cli3
 2. package.json内置了router，vuex，axios，less，sass
@@ -11,3 +14,11 @@ vue 项目的基础框架
 7. index.vue测试了css module，less和sass的全局导入
 
 8. 持续更新
+
+---
+
+- vue-universal-h5
+
+1. 这是服务于移动端的构建，基于vue2.x，cli3
+
+2. 持续更新
