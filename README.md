@@ -27,3 +27,6 @@
 
 2. 持续更新
 
+---
+### 备注
+- native 和 api 按需引入，内部使用export方式；calc的export default为对象，也建议是使用到再引入（还能有代码提示）
