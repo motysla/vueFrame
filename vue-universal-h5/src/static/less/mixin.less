@@ -1,0 +1,24 @@
+.mixin-iconfont(@color: #fff, @fontSize: .2rem) {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: @fontSize;
+    color: @color;
+}
+
+@import "./fontIcon.css";
+
+.minxin-background-image(@imageUrl, @minHeight: 700px) {
+    width: 100%;
+    background-image: url(@imageUrl);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    min-height: @minHeight;
+    z-index:-10;
+    zoom: 1;
+}
+
+@import "./theme";
