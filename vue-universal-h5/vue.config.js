@@ -1,4 +1,5 @@
 const path = require('path')
+const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin');
 
 module.exports = {
   devServer: {
@@ -16,7 +17,7 @@ module.exports = {
     }
   },
   css: {
-    // css拆分，默认true
+    // css拆分ExtractTextPlugin插件，默认true - 骨架屏需要为true
     extract: true,
     loaderOptions: {
       // css moudle 配置：https://www.jianshu.com/p/125f33c35446
@@ -36,5 +37,17 @@ module.exports = {
       preProcessor: 'less',
       patterns: [path.resolve(__dirname, 'src/static/less/mixin.less')]
     }
-  }
+  },
+  configureWebpack: (config)=>{
+    // vue骨架屏插件配置
+    config.plugins.push(new SkeletonWebpackPlugin({
+      webpackConfig: {
+        entry: {
+          app: path.join(__dirname, './src/config/skeleton.js'),
+        },
+      },
+      minimize: true,
+      quiet: true,
+    }))
+  },
 }
