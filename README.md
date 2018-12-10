@@ -4,7 +4,7 @@ vue项目的基础框架，分为pc电脑端和h5移动端
 
 ### use
 1. clone项目到本地，按需要选择pc或者h5项目，`cd`进入到对应的项目下，通过`npm i`或者`cnpm i`下载依赖后运行
-2. `cli3`是基于npm下载依赖。若是通过`cnpm`下载依赖会和`cli3`管理冲突，`cnpm`下插件和依赖管理需要手动处理：如`element-ui`
+2. `cli3`是基于npm下载依赖。若是通过`cnpm`下载依赖会和`cli3`管理冲突，此时需要手动处理：如`element-ui`
   - cnpm i element-ui --save
   - cnpm uninstall element-ui --save
 
