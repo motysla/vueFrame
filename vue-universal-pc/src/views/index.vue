@@ -36,21 +36,25 @@
     <el-main class="scss-main">
       <p class="less-color">这是通过less设置的:global字体颜色为粉色</p>
       <p :class="$style.lessFontSize">这是通过less设置的:local字体大小为40px</p>
-      <p :class="$style.red">
-        This should be red</p>
-
+      <p :class="$style.red">This should be red</p>
       <h4 :class="$style.headerTit">类别推荐</h4>
       <h4 :class="$style['header-tit']">类别推荐</h4>
 
       <router-view></router-view>
     </el-main>
-    <!-- <el-fotter>
-
-    </el-fotter> -->
+    <el-footer>
+      <h3>{{$t("person.name")}}</h3>
+      <h2>{{$t("person.gender")}}</h2>
+      <p>{{$t("person.age")}}</p>
+      <el-button @click="changeLanguage('en')">英文</el-button>
+      <el-button @click="changeLanguage('zh')">中文</el-button>
+      <el-button @click="changeLanguage('jp')">日文</el-button>
+    </el-footer>
   </el-container>
 </template>
 
 <script>
+import { setupLangLocal } from "../config/locale";
 export default {
   components: {},
   data() {
@@ -60,9 +64,13 @@ export default {
     };
   },
   computed: {},
-  methods: {},
+  methods: {
+    changeLanguage(lang) {
+      setupLangLocal(lang);
+    }
+  },
   mounted() {
-    console.log(process.env)
+    console.log(process.env);
   }
 };
 </script>
@@ -127,6 +135,12 @@ export default {
 .el-main {
   padding: 0;
   padding-top: 70px;
+}
+.el-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
 }
 </style>
 
