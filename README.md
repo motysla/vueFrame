@@ -11,7 +11,6 @@ vue 项目的基础框架，分为pc电脑端和h5移动端
 5. router.js配置了页面重定向，二级路由（懒加载）
 6. app.vue引入了浏览器样式重置
 7. index.vue测试了css module，less和sass的全局导入，vue-i18n多语言测试
-8. 配置，
 
 ### vue-universal-h5
 
