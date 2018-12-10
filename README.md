@@ -5,22 +5,23 @@ vue 项目的基础框架，分为pc电脑端和h5移动端
 ### vue-universal-pc
 
 1. 这是服务于pc端的构建，基于vue2.x，cli3
-2. package.json内置了router，vuex，axios，less，sass
-3. main.js全局引入了element-ui，swiper，路由钩子设置页面标题
+2. package.json内置了router，vuex，axios，less，sass，element-ui，vue-i18n
+3. main.js全局引入了element-ui，swiper，路由钩子设置页面标题，vue-i18n多语言支持
 4. vue.config.js配置了css module，less和sass的全局导入，devServer代理
 5. router.js配置了页面重定向，二级路由（懒加载）
 6. app.vue引入了浏览器样式重置
-7. index.vue测试了css module，less和sass的全局导入
+7. index.vue测试了css module，less和sass的全局导入，vue-i18n多语言测试
+8. 配置，
 
 ### vue-universal-h5
 
 1. 这是服务于移动端的构建，基于vue2.x，cli3
-2. package.json内置了router，vuex，axios，less，sass
-3. main.js全局引入了element-ui，路由钩子设置页面标题，rem适配方案
+2. package.json内置了router，vuex，axios，less，sass，mint-ui,vue-i18n
+3. main.js全局引入了element-ui，路由钩子设置页面标题，rem适配方案，vue-i18n多语言支持
 4. vue.config.js配置了css module，less和sass的全局导入，devServer代理
 5. router.js配置了页面重定向，懒加载路由
 6. app.vue引入了浏览器样式重置
-7. index.vue测试了css module，less和sass的全局导入
+7. index.vue测试了css module，less和sass的全局导入，vue-i18n多语言测试
 8. 引入和native桥接的js，native框架为`WebViewJavascriptBridge`
 
 ---
@@ -31,6 +32,4 @@ vue 项目的基础框架，分为pc电脑端和h5移动端
 ### TODO
 
 1. eslint
-2. 骨架屏
-3. i18n
-4. 
+2. 
