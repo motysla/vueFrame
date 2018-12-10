@@ -1,6 +1,9 @@
 # vueFrame
 
-vue 项目的基础框架，分为pc电脑端和h5移动端
+vue项目的基础框架，分为pc电脑端和h5移动端
+
+### use
+1. clone项目到本地，按需要选择pc或者h5项目，`cd`进入到对应的项目下，通过`npm i`或者`cnpm i`下载依赖后运行
 
 ### vue-universal-pc
 
