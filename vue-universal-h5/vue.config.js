@@ -1,16 +1,21 @@
 const path = require('path')
 const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin');
 
+let host = "https://xxx.xxxx.cn";
+if (process.env.NODE_ENV === 'production') {
+    host = ""
+}
+
 module.exports = {
   devServer: {
     proxy: {
       '/path1': {
-        target: 'host1',
+        target: host,
         changeOrigin: true,
         pathRequiresRewrite: {}
       },
       '/path2': {
-        target: 'host2',
+        target: host,
         changeOrigin: true,
         pathRequiresRewrite: {}
       }
