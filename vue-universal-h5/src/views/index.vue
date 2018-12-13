@@ -24,6 +24,7 @@
 
 <script>
 import { setupLangLocal } from "../config/locale";
+import { api_login } from "../service/network";
 export default {
   components: {},
   data() {
@@ -31,6 +32,7 @@ export default {
   },
   computed: {},
   methods: {
+    // 更改显示语言
     changeLanguage(lang) {
       setupLangLocal(lang);
     }
