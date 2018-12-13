@@ -65,13 +65,12 @@ export default {
   },
   computed: {},
   methods: {
+    // 更改显示语言
     changeLanguage(lang) {
       setupLangLocal(lang);
     }
   },
-  mounted() {
-    console.log(process.env);
-  }
+  mounted() {}
 };
 </script>
 
