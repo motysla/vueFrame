@@ -1,10 +1,6 @@
 const path = require('path')
-const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin');
-
-let host = "https://xxx.xxx.com";
-if (process.env.NODE_ENV === 'production') {
-  host = ""
-}
+const SkeletonWebpackPlugin = require('vue-skeleton-webpack-plugin')
+const host = require('./src/config/params').getHost()
 
 module.exports = {
   devServer: {
@@ -43,16 +39,18 @@ module.exports = {
       patterns: [path.resolve(__dirname, 'src/static/less/mixin.less')]
     }
   },
-  configureWebpack: (config)=>{
+  configureWebpack: config => {
     // vue骨架屏插件配置
-    config.plugins.push(new SkeletonWebpackPlugin({
-      webpackConfig: {
-        entry: {
-          app: path.join(__dirname, './src/config/skeleton.js'),
+    config.plugins.push(
+      new SkeletonWebpackPlugin({
+        webpackConfig: {
+          entry: {
+            app: path.join(__dirname, './src/config/skeleton.js')
+          }
         },
-      },
-      minimize: true,
-      quiet: true,
-    }))
-  },
+        minimize: true,
+        quiet: true
+      })
+    )
+  }
 }
