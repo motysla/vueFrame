@@ -25,6 +25,7 @@
 <script>
 import { setupLangLocal } from "../config/locale";
 import { api_login } from "../service/network";
+
 export default {
   components: {},
   data() {
@@ -37,7 +38,9 @@ export default {
       setupLangLocal(lang);
     }
   },
-  mounted() {}
+  mounted() {
+    console.log(require("../config/params").getHost());
+  }
 };
 </script>
 
