@@ -8,19 +8,19 @@ import i18n from './config/locale'
 
 // 移动端Rem适配方案
 import Rem from './config/rem'
-Rem.rem();
+Rem.rem()
 
 // 全局引入mint-ui
-import MintUI from 'mint-ui';
-import 'mint-ui/lib/style.css';
-Vue.use(MintUI);
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(MintUI)
 
 Vue.config.productionTip = false
 
 // 路由钩子
-router.afterEach((to) => {
-	document.title = to.meta.title;
-});
+router.afterEach(to => {
+  document.title = to.meta.title
+})
 
 const app = new Vue({
   store,
@@ -37,4 +37,3 @@ if (process.env.NODE_ENV === 'production') {
 } else {
   app.$mount('#app')
 }
-
