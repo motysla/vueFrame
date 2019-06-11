@@ -33,5 +33,16 @@ export default new Router({
       component: r =>
         require.ensure([], () => r(require('./views/auth/login.vue')), 'login')
     },
+
+    // === app ===
+    {
+      path: '/home',
+      name: 'home',
+      meta: {
+        title: '首页'
+      },
+      component: r =>
+        require.ensure([], () => r(require('./views/pro/home.vue')), 'pro')
+    }
   ]
 })
